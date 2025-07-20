@@ -17,11 +17,17 @@ const list = new ListTemplate(ul);
 form.addEventListener("submit", (e: Event) => {
     e.preventDefault();
 
+    let values: [string, string, number] = [toFrom.value, details.value, amount.valueAsNumber];
+    if (values.some(value => value === "")) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
     let doc: HasFormatter;
     if (type.value == "invoice") {
-        doc = new Invoice(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new Invoice(...values);
     } else {
-        doc = new Payments(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new Payments(...values);
     }
 
     list.render(doc, type.value, "end");
