@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TypeScript Tutorial</title>
+        <title>Finance Logger</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
@@ -13,7 +13,7 @@
             <ul class="item-list"></ul>
         </div>
 
-        <footer>
+        <section>
             <form class="new-item-form">
                 <div class="field">
                     <label>Type:</label>
@@ -21,11 +21,7 @@
                         <option value="invoice">Invoice</option>
                         <option value="payment">Payment</option>
                     </select>
-                </div><select id="type1" title="Type">
-                        <option value="invoice">Invoice</option>
-                        <option value="payment">Payment</option>
-                    </select>
-
+                </div>
                 <div class="field">
                     <label>To / From:</label>
                     <input type="text" id="tofrom" placeholder="Enter recipient or sender" title="To / From" />
@@ -38,12 +34,12 @@
                     <label>Amount (£):</label>
                     <input type="number" id="amount" title="Amount (£)" placeholder="Enter amount" />
                 </div>
-                <buttonbutton type="submit">Add</button>
+                <button type="submit">Add</button>
             </form>
 
-            <a href="">The Net Ninja</a>
-        </footer>
+            <a href="https://vinald.github.io">[Vinald]</a>
+        </section>
 
-        <script src="app.js"></script>
+        <script type="module" src="./dist/app.js"></script>
     </body>
 </html>

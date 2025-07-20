@@ -73,7 +73,7 @@ dmypy.json
 
 # Compiled files and binaries
 build/
-dist/
+public/dist/
 target/
 out/
 *.o
