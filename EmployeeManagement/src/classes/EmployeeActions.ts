@@ -1,4 +1,4 @@
-import { BaseEmployee } from "./Employee";
+import { BaseEmployee } from "./Employee.js";
 
 interface IEmployeeActions {
     work(): void;

@@ -9,7 +9,7 @@ export class Department {
 
     printSalaries() {
         this._employees.forEach((emp) => {
-            console.log(`${emp.firstName} $${emp.getSalary}`);
+            console.log(`${emp.firstName} $${emp.getSalary()}`);
         });
     }
 }
